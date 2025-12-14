@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+    <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="get">
         <label for="name">Name:</label>
         <input type="text" name="name"><input type="submit">
         <br><br>
@@ -23,3 +23,4 @@
         foreach ($_SERVER as $key => $value) {
             echo "{$key} = {$value} <br>";
         }
+
